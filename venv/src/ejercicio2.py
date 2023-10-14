@@ -1,12 +1,15 @@
 def almacenar(contrasena_usuario):
     contrasena ='contraseña'
     if contrasena == contrasena_usuario.lower():
-        return "ES correcta"
+        return True
     else:
-        return  "Es incorrecta"
+        return  False
     
 if __name__ == "__main__":
     contrasena_usuario=input("Escriba una contraseña: ")
-    print(almacenar(contrasena_usuario))
+    if almacenar(contrasena_usuario):
+        print("Es correcto")
+    else:
+        print("Error")
 
 

@@ -1,9 +1,13 @@
 def mayor(edad):
     if edad >= 18:
-        return f"Eres mayor de edad"
+        return True
     else:
-        return f"Eres menor de edad"
+        return False
     
 if __name__=="__main__":
     edad = int(input("¿Cuantos años tienes? "))
-    print(mayor(edad))
+    if mayor(edad):
+        print("Es mayor de edad")
+    else:
+        print("Es menor de edad")
+    
